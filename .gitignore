@@ -1,0 +1,41 @@
+# Credentials - NEVER commit
+.env
+.env.*
+!.env.example
+LLM_Config/models.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Large data / binary caches (rebuildable from public Debian sources)
+Build_RAG_Info/
+
+# Experiment / batch output artifacts
+_agent_batch*/
+runs/
+logs/
+records/
+_output/
+
+# IDE / tool config
+.claude/
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.tar.gz
+*.orig
+thirdparty/

@@ -1,0 +1,8 @@
+# Format: model_name,base_url,api_key,phases(optional; separated by |),aliases(optional; separated by |)
+# Workflow phases: default, direct, readrepo, phase2, phase3, check
+# 
+# Example:
+# provider/model-name,https://api.provider.com/v1/,your-api-key-here,default|direct|readrepo|phase2|phase3|check,alias
+#
+# Fill in your API keys below. This file is gitignored by default.
+# You can also use environment variables OPENROUTER_API_KEY, DEEPSEEK_API_KEY etc.

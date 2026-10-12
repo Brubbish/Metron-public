@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "architecture": "amd64",
+  "releases": {
+    "etch": {
+      "base_image": "debian/eol:etch",
+      "base_url": "http://archive.debian.org/debian",
+      "repositories": ["etch"],
+      "components": ["main", "contrib", "non-free"],
+      "archive": true
+    },
+    "lenny": {
+      "base_image": "debian/eol:lenny",
+      "base_url": "http://archive.debian.org/debian",
+      "repositories": ["lenny"],
+      "components": ["main", "contrib", "non-free"],
+      "archive": true
+    },
+    "squeeze": {
+      "base_image": "debian/eol:squeeze",
+      "base_url": "http://archive.debian.org/debian",
+      "repositories": ["squeeze", "squeeze-proposed-updates"],
+      "components": ["main", "contrib", "non-free"],
+      "archive": true
+    },
+    "wheezy": {
+      "base_image": "debian/eol:wheezy",
+      "base_url": "http://archive.debian.org/debian",
+      "repositories": ["wheezy", "wheezy-backports", "wheezy-backports-sloppy"],
+      "components": ["main", "contrib", "non-free"],
+      "archive": true
+    },
+    "jessie": {
+      "base_image": "debian/eol:jessie",
+      "base_url": "http://archive.debian.org/debian",
+      "repositories": ["jessie", "jessie-backports", "jessie-backports-sloppy"],
+      "components": ["main", "contrib", "non-free"],
+      "archive": true
+    },
+    "stretch": {
+      "base_image": "debian/eol:stretch",
+      "base_url": "http://archive.debian.org/debian",
+      "repositories": ["stretch", "stretch-backports", "stretch-backports-sloppy", "stretch-proposed-updates"],
+      "components": ["main", "contrib", "non-free"],
+      "archive": true
+    },
+    "buster": {
+      "base_image": "debian/eol:buster",
+      "base_url": "http://archive.debian.org/debian",
+      "repositories": ["buster", "buster-backports", "buster-backports-sloppy", "buster-proposed-updates", "buster-updates"],
+      "components": ["main", "contrib", "non-free"],
+      "archive": true
+    },
+    "bullseye": {
+      "base_image": "debian/eol:bullseye",
+      "base_url": "http://archive.debian.org/debian",
+      "repositories": ["bullseye", "bullseye-backports", "bullseye-backports-sloppy", "bullseye-proposed-updates", "bullseye-updates"],
+      "components": ["main", "contrib", "non-free"],
+      "archive": true
+    },
+    "bookworm": {
+      "base_image": "debian:bookworm",
+      "base_url": "http://deb.debian.org/debian",
+      "repositories": ["bookworm", "bookworm-updates", "bookworm-backports", "bookworm-proposed-updates"],
+      "components": ["main", "contrib", "non-free", "non-free-firmware"],
+      "archive": false
+    },
+    "trixie": {
+      "base_image": "debian:trixie",
+      "base_url": "http://deb.debian.org/debian",
+      "repositories": ["trixie", "trixie-updates", "trixie-proposed-updates"],
+      "components": ["main", "contrib", "non-free", "non-free-firmware"],
+      "archive": false
+    }
+  }
+}

@@ -1,0 +1,16 @@
+[project]
+name = "metron"
+version = "1.0.0"
+description = "Metron — Automated C/C++ Build Repair System"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+asyncio_mode = "auto"
+
+[tool.setuptools.packages.find]
+include = ["core*", "diagnosis*", "llm*", "tools*", "repo_parse*", "rag*", "batch*", "LLM_Config*"]
